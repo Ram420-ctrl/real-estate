@@ -20,7 +20,8 @@ const propertySchema = new mongoose.Schema({
 app.get("/properties", async (req, res) => {
   const data = await Property.find();
   res.json(data);
-});
+
+const Property = mongoose.model("Property", propertySchema);
 
 // POST
 app.post("/properties", async (req, res) => {
