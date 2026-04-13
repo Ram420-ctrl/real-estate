@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: cyan;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 0 0 10px cyan;
+}
+
+input {
+  background: black;
+  border: 1px solid cyan;
+  color: cyan;
+}
+
+#properties {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid cyan;
+  padding: 10px;
+  box-shadow: 0 0 15px cyan;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  margin: 5% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
