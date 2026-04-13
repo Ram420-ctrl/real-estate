@@ -8,12 +8,14 @@ app.use(express.json());
 
 mongoose.connect("mongodb+srv://ram:Ramesh%402005@cluster0.5yjx6yi.mongodb.net/realestate");
 
-const Property = mongoose.model("Property", {
-  title: String,?appName=Cluster0/realestate");
+const propertySchema = new mongoose.Schema({
+  title: String,
   price: String,
-  location: String
+  location: String,
+  landmark: String,
+  description: String,
+  image: String
 });
-
 // GET
 app.get("/properties", async (req, res) => {
   const data = await Property.find();
