@@ -6,10 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://ram:Ramesh@2005@cluster0.5yjx6yi.mongodb.net/?appName=Cluster0/realestate");
+mongoose.connect("mongodb+srv://ram:Ramesh%402005@cluster0.5yjx6yi.mongodb.net/realestate");
 
 const Property = mongoose.model("Property", {
-  title: String,
+  title: String,?appName=Cluster0/realestate");
   price: String,
   location: String
 });
