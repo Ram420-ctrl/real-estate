@@ -1,4 +1,4 @@
-const API = "https://YOUR-RENDER-URL.onrender.com/properties";
+const API = "https://real-estate-backend-abc.onrender.com/properties";
 
 const container = document.getElementById("properties");
 const search = document.getElementById("search");
