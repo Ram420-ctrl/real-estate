@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://username:password@cluster.mongodb.net/realestate");
+mongoose.connect("mongodb+srv://ram:Ramesh@2005@cluster0.5yjx6yi.mongodb.net/?appName=Cluster0/realestate");
 
 const Property = mongoose.model("Property", {
   title: String,
